@@ -102,3 +102,59 @@ useHead({
   title: data.value?.Data.pageTitle,
 });
 </script>
+
+<style>
+.media-wrapper {
+  padding: 20px;
+}
+
+.media-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 0 0 0.08rem rgba(8, 60, 130, 0.06),
+    0rem 0rem 1.25rem rgba(30, 34, 40, 0.04);
+  border: 0;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.media-title {
+  margin-bottom: 10px;
+  line-height: 20px;
+}
+
+.media-published {
+  margin-bottom: 10px;
+}
+
+a.media-download {
+  border: 2px solid #512da8;
+  color: #512da8;
+  padding: 10px 30px;
+  transition: 0.1s;
+  text-decoration: none;
+}
+
+.media-download:hover {
+  background-color: #512da8;
+  color: #fff !important;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .media-item {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .media-info {
+    text-align: left;
+    padding-right: 40px;
+  }
+}
+</style>
